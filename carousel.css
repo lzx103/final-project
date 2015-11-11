@@ -1,0 +1,25 @@
+#parallaxContainer {
+    width: 900px;
+    height: 500px;
+    top: 30px;
+    position: relative;
+}
+#parallaxContainer .layer1 {
+    height: 100%;
+    text-align: center;
+    background-image: url("http://1-background.com/images/stars-1/star-space-tile.jpg");
+}
+#parallaxContainer .layer2 {
+    background-image: url("http://www.abc.net.au/science/news/img/space/comet020605.jpg");
+    position: absolute;
+    height: 139px;
+    width: 100%;
+    bottom: 32px
+}
+#parallaxContainer .layer3 {
+    background-image: url("../img/example_parallax_l3.gif");
+    position: absolute;
+    height: 32px;
+    width: 100%;
+    bottom: 0px;
+}

@@ -1,33 +1,15 @@
-.hello{
-	font: 150px "Satisfy",cursive; 
-	position: fixed;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
+.container-fluid,.row{
+    margin:0;
+    padding:0;
 }
-.tagline{
-	font: 55px "helvetica", sans-serif; 
-	position: fixed;
-	top: 70%;
-	left: 50%;
-	transform: translate(-50%, -50%);
+.header{
+	background-color: pink;
 }
-
-.header-index{
-	display: none;
-	font: 80px "Mako", sans-serif;
-	color: white; 
-	position: fixed;
-	top: 30%;
-	left: 50%;
-	transform: translateX(-50%);
+.about{
+	background-color: lavender;
 }
-.capfont{
-	font-size: 92px;
-}
-hr{
-	display: none;
-
+.contact{
+	background-color: lightgreen;
 }
 #nav{
 	display: none;
@@ -54,4 +36,69 @@ hr{
 	font-family: "Mako", sans-serif;
 	padding: 20px 15px 10px 15px;
 	margin: 0 auto;
+}
+.header{
+	height: 100vh;
+	padding-top: 150px;
+}
+.hello{
+	font: 150px "Satisfy",cursive; 
+	text-align: center;
+	margin:0;
+}
+.tagline{
+	font: 50px "helvetica", sans-serif;
+	text-align: center;
+	margin: 0;
+}
+.star-wrap{
+	height: 25%;
+	text-align: center;
+	padding-top: 50px;
+	padding-bottom: 130px;
+}
+.pstar, .fa, .fa-star{
+	font: 15px "helvetica", sans-serif;
+	text-align: center;
+	margin-top: 15px;
+	margin-bottom: 0;
+}
+.fa-star{
+	position: fixed;
+
+}
+.header-index{
+	display: none;
+	font: 80px "Mako", sans-serif;
+	color: white; 
+	position: fixed;
+	top: 30%;
+	left: 50%;
+	transform: translateX(-50%);
+}
+.capfont{
+	font-size: 92px;
+}
+.about, .contact{
+	height: 100vh;
+	padding-top: 100px;
+}
+.about-box, .contact-box{
+	position: relative;
+	left: 25%;
+	display: none;
+}
+.a-border, .c-border{
+	width: 50%;
+	border: 1px solid black;
+	text-align: center;
+	margin-bottom: 300px;
+}
+/*.about-trigger{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}*/
+.break{
+	height: 600px;
 }

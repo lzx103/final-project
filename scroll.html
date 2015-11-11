@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+
+	<style type="text/css">
+		
+/* Create huge scrolling area (imitates height of a page) */
+main { padding: 200px 0 1500px 0; overflow: hidden; }
+
+/* Styles for wrap for demo */
+.wrap {
+  text-align: center;
+  background: #fff;
+  padding: 50px 0;
+  -moz-box-shadow: 0 0 6px rgba(153, 153, 153, 0.25);
+  -webkit-box-shadow: 0 0 6px rgba(153, 153, 153, 0.25);
+  box-shadow: 0 0 6px rgba(153, 153, 153, 0.25);
+  position: relative;
+}
+#animate1{
+  text-align: center;
+  height: 200px;
+  width:200px;
+  background-color: pink;
+}
+.t2{
+  float: right;
+}
+hr{
+  padding: 50px;
+}
+
+/* Default Animation Styles */
+#animation {
+  background: #000;
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  margin: 50px auto;
+  position: relative;
+}
+#animation i {
+  color: #fff;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  font-size: 30px;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+	</style>
+</head>
+<body>
+	<!-- <div id="scene">
+		<h2>hiiii</h2>
+
+		<div id="animation">
+		<i class="fa fa-gratipay"></i>
+		</div>
+		
+	</div> -->
+
+	<main><div class="container">
+
+
+  
+  
+  <div class="row"><!-- where the animation starts -->
+    
+    <div class="col-md-6 col-md-offset-3">
+      <div class="wrap" id="trigger1">  
+        <h2>Magic Happens Here</h2>
+        <div id="stick-element"><i class="fa fa-star"></i></div>
+      </div>
+    </div>
+    
+  </div>
+  <div id="animate1" class="box2 skin">
+    <hr>
+  <div class="t2">trigger</div>
+    
+    
+    
+    
+
+</div></main>
+	
+
+	
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+    <script src="TweenMax.min.js"></script>
+    <script src="greensock/plugins/ScrollToPlugin.min.js"></script>
+    <script src="ScrollMagic.js"></script>
+    <script src="plugins/animation.gsap.js"></script>
+    
+
+  <script type="text/javascript">
+
+    $(function() {
+  
+  // Init ScrollMagic Controller
+  var controller = new ScrollMagic.Controller();
+  
+  // Create the Scene and trigger when visible
+  var scene = new ScrollMagic.Scene({
+    triggerElement:"#trigger1",
+    offset: 50,
+    duration: 300,
+    
+  })
+  .setPin("#stick-element")
+  .addTo(controller);
+
+  var scene = new ScrollMagic.Scene({
+    triggerElement:".t2"
+
+  })
+  .setTween("#animate1", 0.5, {backgroundColor: "green", scale: 2.5}) // trigger a TweenMax.to tween
+  .addTo(controller); 
+
+  
+  
+  
+});
+
+  </script>
+</body>
+</html>
