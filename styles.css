@@ -3,13 +3,16 @@
     padding:0;
 }
 .header{
-	background-color: pink;
+	background-color: white;
 }
 .about{
-	background-color: lavender;
+	background: url("star-background-fade.jpg") no-repeat center top;
 }
 .contact{
-	background-color: lightgreen;
+	background: url("star-background.jpg") repeat center top;
+}
+.gallery{
+	background-color: lightblue;
 }
 #nav{
 	display: none;
@@ -44,7 +47,8 @@
 .hello{
 	font: 150px "Satisfy",cursive; 
 	text-align: center;
-	margin:0;
+	margin-bottom:0px;
+	margin-right: 0px;
 }
 .tagline{
 	font: 50px "helvetica", sans-serif;
@@ -65,7 +69,7 @@
 }
 .fa-star{
 	position: fixed;
-
+	transform: translateX(-50%);
 }
 .header-index{
 	display: none;
@@ -79,20 +83,23 @@
 .capfont{
 	font-size: 92px;
 }
-.about, .contact{
+.about, .contact, .gallery{
 	height: 100vh;
 	padding-top: 100px;
 }
-.about-box, .contact-box{
+.about-box, .contact-box, .gallery-box{
 	position: relative;
 	left: 25%;
 	display: none;
 }
-.a-border, .c-border{
+.a-border,.c-border,.g-border{
 	width: 50%;
 	border: 1px solid black;
 	text-align: center;
-	margin-bottom: 300px;
+	margin-bottom: 150px;
+}
+.a-border{
+	margin-top: 100px;
 }
 /*.about-trigger{
 	position: absolute;
