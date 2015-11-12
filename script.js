@@ -53,6 +53,22 @@ $(document).ready(function(){
         }
        }); 
 
+      var starchange = function(){
+        var glowpx = $(window).scrollTop();
+        var docHeight = $(document).height();
+        var winHeight = $(window).height();
+        var s1Top = (glowpx / docHeight) * 80 + (winHeight * 0.3);
+        var s2Top = (glowpx / docHeight) * -550 + (winHeight * 0.7);
+        var s3Top = (glowpx / docHeight) * -300 + (winHeight * 0.9);
+        $('.s1').css('top', s1Top);
+        $('.s2').css('top', s2Top);
+        $('.s3').css('top', s3Top);
+      };
+      starchange();
+      $(window).scroll(function () {
+        starchange();
+      });
+
       // var $w = $(window).scroll(function(){
       //   var starend = $('.gallery-trigger-end').offset().top-395;
       //   if($w.scrollTop() > starend){
@@ -93,13 +109,8 @@ $(document).ready(function(){
       var scrollTop = $(window).scrollTop();
       var height = $(window).height();
       var aboutTriggerTop = $('.about-trigger').offset().top;
-      // if(height>scrollTop){
-        var scrollOpa = ((height - scrollTop * 1.2 + aboutTriggerTop) / (height));
-      // }
-      // else{
-      //   var scrollOpa = ((scrollTop - height *2) / (scrollTop));
-      // }
-      // console.log(scrollTop, height,scrollOpa)
+      var scrollOpa = ((height - scrollTop * 1.2 + aboutTriggerTop) / (height));
+     
       $('.about-box').css({
           'opacity': scrollOpa
       });
@@ -208,31 +219,10 @@ $(document).ready(function(){
       return false;
   });
 
-    
-
-  // 	var scene = new ScrollMagic.Scene({
-  //   	triggerElement:".about-trigger-end"
- 	// })
- 	// .setTween("#animate1", {display:"none"}) // trigger a TweenMax.to tween
-  // 	.addTo(controller); 
-	
-	
-
-
-	// $('.nav-link a').hover(function(){
-	// 	$(this).css("color","#6600CC");
-	// }, function(){
-	// 	$(this).css("color","black");	
-	// });
-
-	// $('.begin').hover(function(){
-	// 	$(this).css("box-shadow", "0px 0px 100px 50px #6600CC");
-	// 	$(this).css("background-color", "rgba(102, 0, 204, 0.9)");
-	// 	$(this).css("cursor", "pointer");
-	// }, function(){
-	// 	$(this).css("box-shadow", "none");
-	// 	$(this).css("background-color", "black");
-	// 	$(this).css("cursor", "auto");
-	// });
+	$('.nav-link a').hover(function(){
+		$(this).css("text-shadow","0 0 5px white, 0 0 3px #ffffb3");
+	}, function(){
+		$(this).css("text-shadow","");	
+	});
 	
 });
