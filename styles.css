@@ -13,6 +13,7 @@
 	background: url("star-background-fade.jpg") no-repeat center top;
 }
 .contact, .gallery,.break{
+
 	background: url("star-background.jpg") repeat center top;
 }
 #nav{
@@ -78,9 +79,13 @@
 	text-align: center;
 }
 
-.about, .contact, .gallery{
+.about, .contact{
 	height: 100vh;
 	padding-top: 100px;
+}
+.gallery{
+	height: 100vh;
+	padding-top: 0px;
 }
 .about-box, .contact-box, .gallery-box{
 	position: relative;
@@ -99,6 +104,9 @@
 .a-border{
 	margin-top: 100px;
 	margin-bottom: 150px;
+}
+.c-border{
+	margin-top: 100px;
 }
 #a-head,#c-head,#g-head{
 	padding-top: 15px;
@@ -123,24 +131,26 @@
 	display: inline-block;
 	width: 80px;
 	height: 85px;
-	margin: 5px;
-	padding-bottom: 10px;
+	margin: 5px 5px 20px 5px;
 }
 .g-border img{
-	float: left;
-	width: 300px;
-	margin: 5px 5px 0 5px;
+	/*float: left;*/
+	width:150px;
+    height:150px;
+    margin:0 -3px 0 -3px;
+    object-fit:cover;
+    padding-bottom: 30px;
 }
 .about-trigger,.about-trigger-end,.contact-trigger,.contact-trigger-end,.gallery-trigger,.gallery-trigger-end{
 	visibility: hidden;
 }
-.s1,.s2,.s3{
+.s1,.s2,.s3,.s4,.s5{
 	position: fixed;
 	color: white;
 	text-shadow:0 0 5px white;
 }
 .s1{
-	left: 35px;
+	left: 80px;
 	top: 225px;
 }
 .s2{
@@ -148,9 +158,15 @@
 	top: 380px;
 }
 .s3{
-	left: 5px;
+	left: 15px;
 	top: 580px;
 }
-.break{
-	height: 160px;
+.s4{
+	right: 60px;
 }
+.s5{
+	left: 55px;
+}
+/*.break{
+	height: 160px;
+}*/

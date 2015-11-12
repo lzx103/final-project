@@ -57,12 +57,16 @@ $(document).ready(function(){
         var glowpx = $(window).scrollTop();
         var docHeight = $(document).height();
         var winHeight = $(window).height();
-        var s1Top = (glowpx / docHeight) * 80 + (winHeight * 0.3);
+        var s1Top = (glowpx / docHeight) * 50 + (winHeight * 0.5);
         var s2Top = (glowpx / docHeight) * -550 + (winHeight * 0.7);
         var s3Top = (glowpx / docHeight) * -300 + (winHeight * 0.9);
+        var s4Top = (glowpx / docHeight) * -700 + (winHeight * 0.8);
+        var s5Top = (glowpx / docHeight) * -200 + (winHeight * 0.3);
         $('.s1').css('top', s1Top);
         $('.s2').css('top', s2Top);
         $('.s3').css('top', s3Top);
+        $('.s4').css('top', s4Top);
+        $('.s5').css('top', s5Top);
       };
       starchange();
       $(window).scroll(function () {
@@ -214,7 +218,7 @@ $(document).ready(function(){
 
   $(".gallery-link").click(function() {
       $("body").animate({
-              scrollTop: $(".gallery").offset().top},
+              scrollTop: $(".gallery-pre").offset().top},
           1500);
       return false;
   });

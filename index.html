@@ -5,6 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="reset.css">
 	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link href="lightbox.css" rel="stylesheet">
 	<link href='https://fonts.googleapis.com/css?family=Satisfy' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Fira+Sans:400,300' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
@@ -17,7 +18,7 @@
 		<div id="nav-wrap">
 			<li class="nav-link about-link"><a href=".about">about</a></li>
 			<li class="nav-link contact-link"><a href=".contact">contact</a></li>
-			<li class="nav-link gallery-link"><a href="gallery.html">gallery</a></li>
+			<li class="nav-link gallery-link"><a href=".gallery-pre">gallery</a></li>
 		</div>
 		</ul>
 	</div>
@@ -49,6 +50,8 @@
 		<i class="fa fa-star fa-rotate-90 fa-2x s1"></i>
 		<i class="fa fa-star fa-rotate-180 fa-2x s2"></i>
 		<i class="fa fa-star fa-rotate-270 s3"></i>
+		<i class="fa fa-star fa-rotate-90 s4"></i>
+		<i class="fa fa-star fa-rotate-180 s5"></i>
 	</section>
 
 	<section class="contact">
@@ -63,7 +66,9 @@
 				</a>
 			</div>
 		</div>
+		
 		<div class="contact-trigger-end">ctrigger end</div>	
+		<div class="gallery-pre"></div>
 	</section>
 
 	<section class="gallery">
@@ -72,9 +77,9 @@
 			<div class="g-border">
 				<h2 id="g-head">gallery</h2>
 				<div id="g-p">
-					<img src="lusi1.JPG">
-					<img src="austin1.jpg">
-					<img src="austin2.jpg">
+					<a href="lusi1.JPG" data-lightbox="gallery" data-title=""><img src="lusi1.JPG"/></a>
+					<a href="austin1.jpg" data-lightbox="gallery" data-title="my favorite city in the world: austin, tx"><img src="austin1.jpg"/></a>
+					<a href="austin2.jpg" data-lightbox="gallery" data-title="another great picture of austin"><img src="austin2.jpg"/></a>
 				</div>
 			</div>
 		</div>
@@ -90,5 +95,6 @@
     <script src="ScrollMagic.js"></script>
     <script src="plugins/animation.gsap.js"></script>
 	<script type="text/javascript" src="script.js"></script>
+	<script src="lightbox.js"></script>
 </body>
 </html>
