@@ -2,17 +2,17 @@
     margin:0;
     padding:0;
 }
+.body{
+	overflow-x:hidden;
+}
 .header{
 	background-color: white;
 }
 .about{
 	background: url("star-background-fade.jpg") no-repeat center top;
 }
-.contact{
+.contact, .gallery{
 	background: url("star-background.jpg") repeat center top;
-}
-.gallery{
-	background-color: lightblue;
 }
 #nav{
 	display: none;
@@ -94,18 +94,40 @@
 }
 .a-border,.c-border,.g-border{
 	width: 50%;
-	border: 1px solid black;
+	/*border: 1px solid rgba(255, 255, 255,0.3);*/
+	border-radius: 25px;
 	text-align: center;
 	margin-bottom: 150px;
+	background-color: rgba(255, 255, 255,0.3);
 }
 .a-border{
 	margin-top: 100px;
 }
-/*.about-trigger{
-	position: absolute;
-	bottom: 0;
-	left: 0;
-}*/
+#a-head,#c-head,#g-head{
+	padding-top: 15px;
+	font-size: 35px;
+}
+#a-p,#g-p{
+	font-size: 20px;
+	padding:10px;
+}
+#a-p{
+	text-align: left;
+}
+#c-p{
+	padding:5px;
+	font-size: 25px;
+}
+.c-border img{
+	display: inline-block;
+	width: 80px;
+	height: 85px;
+	margin: 5px;
+	padding-bottom: 10px;
+}
+.about-trigger,.about-trigger-end,.contact-trigger,.contact-trigger-end,.gallery-trigger,.gallery-trigger-end{
+	visibility: hidden;
+}
 .break{
-	height: 600px;
+	height: 50px;
 }

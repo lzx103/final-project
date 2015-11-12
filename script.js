@@ -56,7 +56,7 @@ $(document).ready(function(){
  	.setTween("#animate1", {display:"initial"}) // trigger a TweenMax.to tween
   	.addTo(controller);
 
-  	var aboutend = $('.about-trigger-end').offset().top-100;
+  	var aboutend = $('.about-trigger-end').offset().top+300;
   	var $w = $(window).scroll(function(){
   		if($w.scrollTop() > aboutend){
   			$('.about-box').css("visibility","hidden")
@@ -73,7 +73,7 @@ $(document).ready(function(){
  	.setTween("#animate2", {display:"initial"}) // trigger a TweenMax.to tween
   	.addTo(controller);
 
-  	var contactend = $('.contact-trigger-end').offset().top-100;
+  	var contactend = $('.contact-trigger-end').offset().top+100;
   	var $w = $(window).scroll(function(){
   		if($w.scrollTop() > contactend){
   			$('.contact-box').css("visibility","hidden")
@@ -121,7 +121,7 @@ $(document).ready(function(){
         return false;
     });
 
-    var starend = $('.gallery-trigger-end').offset().top;
+    var starend = $('.gallery-trigger-end').offset().top-100;
   	var $w = $(window).scroll(function(){
   		if($w.scrollTop() > starend){
   			$('.fa-star').css("visibility","hidden")
