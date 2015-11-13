@@ -220,7 +220,7 @@ $(document).ready(function(){
 
   $(".gallery-link").click(function() {
       $("body").animate({
-              scrollTop: $(".gallery-pre").offset().top},
+              scrollTop: $(".gallery").offset().top},
           1500);
       return false;
   });
