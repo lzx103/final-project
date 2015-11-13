@@ -15,9 +15,9 @@ $(document).ready(function(){
 		// $('.hello').css("display","none");
 		// $('.tagline').css("display","none");
 		// $('.header-index').fadeIn(2000);
-		$('.tagline').fadeIn(2000);
-		$('.fa-star1,.pstar,.break,.about,.contact,.gallery').fadeIn(3000);
-		$('#nav').fadeIn(3000);
+		$('.tagline').fadeIn(1500);
+		$('.fa-star1,.pstar,.break,.about,.contact,.gallery').fadeIn(2000);
+		$('#nav').fadeIn(2000);
 		$('.hello').hover(function(){
 			$(this).css("font-size","150px");
 			$(this).css("cursor", "auto");	
@@ -85,7 +85,7 @@ $(document).ready(function(){
       //   }
       //   console.log(starend,$w.scrollTop())
       // });
-    }, 3100);
+    }, 2500);
 	});
 	
 	var title = function(){
